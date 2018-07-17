@@ -126,9 +126,9 @@ public extension Date {
         let isPast = now - time > 0
         
         let sec:Double = abs(now - time)
-        let min:Double = round(sec/60)
-        let hr:Double = round(min/60)
-        let d:Double = round(hr/24)
+        let min:Double = floor(sec/60)
+        let hr:Double = floor(min/60)
+        let d:Double = floor(hr/24)
         
         
         if sec < 60 {
